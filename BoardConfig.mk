@@ -205,8 +205,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 BOARD_NFC_CHIPSET := pn547
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOOTLOADER_BOARD_NAME)
 
-# CMHW
-BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
+# MKHW
+BOARD_HARDWARE_CLASS += hardware/samsung/mkhw
 
 #Trying to get work the WIFI
 #-include hardware/broadcom/wlan/bcmdhd/firmware/bcm4354/device-bcm.mk
