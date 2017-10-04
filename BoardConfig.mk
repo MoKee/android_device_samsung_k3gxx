@@ -67,7 +67,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 TARGET_KERNEL_SOURCE := kernel/samsung/k3gxx
-TARGET_KERNEL_CONFIG := lineage_k3gxx_defconfig
+TARGET_KERNEL_CONFIG := mokee_k3gxx_defconfig
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
@@ -185,9 +185,9 @@ BOARD_NFC_HAL_SUFFIX := $(TARGET_BOOTLOADER_BOARD_NAME)
 # Legacy BLOB Support
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
-# CMHW
-BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
-BOARD_HARDWARE_CLASS += device/samsung/k3gxx/cmhw
+# MKHW
+BOARD_HARDWARE_CLASS += hardware/samsung/mkhw
+BOARD_HARDWARE_CLASS += device/samsung/k3gxx/mkhw
 
 # SECCOMP
 # frameworks/av/services/{mediacodec,mediaextractor}/minijail
